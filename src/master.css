@@ -1,0 +1,86 @@
+/* login page css*/
+
+.login-wrapper {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+ }
+ 
+ .login-wrapper:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(25 28 36 / 85%);
+    top: 0;
+    left: 0;
+ }
+
+ .loginForm {
+    display: flex;
+    align-items: center;
+    background: rgb(249 211 66 / 20%);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+ }
+ 
+ .welcomeInfo img {
+    width: 150px;
+    margin: 0 0 20px;
+ }
+ 
+ .welcomeInfo {
+    width: 100%;
+    max-width: 50%;
+    text-align: center;
+    padding: 20px 0;
+ }
+ 
+ .welcomeInfo h1 {
+    font-size: 34px;
+    letter-spacing: 2px;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+ }
+ 
+ .welcomeInfo p {
+    margin: 0;
+ }
+
+ .form-control:focus,
+ .form-select:focus {
+    box-shadow: none;
+    background: #2a3038;
+    border-color: #f9d342;
+    color: #ffffff;
+ }
+
+ .form-container {
+    width: 100%;
+    max-width: 50%;
+    background: var(--bg-dark);
+    padding: 50px 30px;
+    border-radius: 15px;
+    text-align: center;
+ }
+
+ .login-title {
+    margin: 0 0 16px;
+}
+ 
+ .login-title h2 {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+ }
+ 
+ .submit-btn button {
+   width: 100%;
+ }
+ 
+ /* login page end  */

@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +12,198 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  color: var(--text-white);
+  margin-bottom: 0.5rem ;
 }
+
+p.css-ahj2mt-MuiTypography-root {
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+:root {
+  --bg-dark: #222;
+  --bg-input: #2A3038;
+  --bg-input-border: #2c2e33;
+  --bg-primary: #f9d342;
+  --text-white: #fff;
+  --text-light: #bfbfbf;
+}
+
+.dark {
+  --bg-dark: #fff;
+  --text-white: #222;
+  --bg-input: #fff;
+  --bg-input-border: #c5c5c5;
+}
+
+/* Header */
+
+.header {
+  background-color: var(--bg-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.103);
+}
+
+.brandLogo img {
+  width: 150px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation .MuiList-root {
+  display: flex;
+}
+
+.navigation .MuiList-root .MuiListItemButton-root {
+  padding: 0;
+}
+
+.navigation .MuiList-root .MuiListItemButton-root a {
+  padding: 5px 15px;
+  text-decoration: none;
+  color: var(--text-white);
+}
+
+.fix-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Header end */
+
+.content-body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-dark);
+  flex-direction: column;
+  gap: 15px;
+}
+
+.content-body h2 {
+  font-size: 40px;
+  color: var(--text-white);
+}
+
+
+.text-color {
+  color: var(--text-white);
+}
+
+.mainLayout {
+  background-color: var(--bg-dark);
+}
+
+.content-body button {
+  background-color: var(--btn-bg);
+  color: var(--btn-text-color);
+}
+
+.content-body h1,
+.sidebar,
+.header {
+  color: var(--text-white);
+}
+
+/* Toggle switch  */
+
+.Theme-switch-texts h5 {
+  margin: 0;
+  color: var(--text-white);
+}
+
+.light-mode-text {
+  display: none;
+}
+
+.dark .light-mode-text {
+  display: block;
+}
+
+.dark-mode-text {
+  display: none;
+}
+
+.light .dark-mode-text {
+  display: block;
+}
+
+/* Toggle switch  */
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.ThemeInput {
+  width: 100%;
+}
+
+.ThemeInput .MuiInputLabel-root {
+  transition: all 0.4s ease-in-out;
+  transform: translate(12px, 9px) scale(1);
+  color: var(--text-white);
+  font-size: 14px;
+}
+
+.ThemeInput .MuiInputLabel-root.Mui-focused,
+.ThemeInput .MuiInputLabel-root.MuiFormLabel-filled {
+  transform: translate(12px, -8px) scale(0);
+}
+
+.ThemeInput input {
+  padding: 0 12px;
+  min-height: 38px;
+  border: 1px solid var(--bg-input-border);
+  font-weight: normal;
+  font-size: 14px;
+  background-color: var(--bg-input);
+  border-radius: 2px;
+  color: var(--text-white);
+  display: flex;
+  transition: all 0.3s ease-in-out;
+}
+
+.ThemeInput .MuiInputBase-root.Mui-focused input {
+  border-color: var(--bg-primary);
+}
+
+.ThemeInput fieldset {
+  border: 0;
+}
+
+.ThemeBtn {
+  gap: 5px;
+  padding: 7px 15px !important;
+  border-radius: 2px !important;
+  font-size: 14px !important;
+  min-width: 100px !important;
+  min-height: 38px;
+  color: #2a3038 !important;
+  background-color: #f9d342 !important;
+  line-height: normal !important;
+}
+
+
+
+
+
